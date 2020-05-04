@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactNotification from 'react-notifications-component'
+
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { ListComponent } from './components/ListComponent';
+// import TouchEventComponent from './TouchEventComponent';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-notifications-component/dist/theme.css'
+import { PopoverComponent } from './components/PopoverComponent';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <TouchEventComponent /> */}
+    <ReactNotification />
+    <ListComponent />
+    <PopoverComponent />
   </React.StrictMode>,
   document.getElementById('root')
 );
